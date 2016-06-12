@@ -1,0 +1,209 @@
+/***********************************
+* Browser Reset
+***********************************/
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/***********************************
+* General Styles
+***********************************/
+
+body {
+    background: #F3F3F3;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    background: url("../images/linedpaper.png") repeat top center;
+}
+
+.box-shadow {
+    -moz-box-shadow: 0 0.15em 0.35em 0 rgba(0,0,0,0.135);
+    -webkit-box-shadow: 0 0.15em 0.35em 0 rgba(0,0,0,0.135);
+    box-shadow: 0 0.15em 0.35em 0 rgba(0,0,0,0.135);
+}
+
+.page-title {
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    letter-spacing: 3px;
+}
+
+.sidebar-title {
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 3px;
+    margin-bottom: 1em;
+    padding-bottom: .2em;
+    border-bottom: 2px solid #F3F3F3;
+}
+
+/***********************************
+* Header Styles
+***********************************/
+
+.header {
+    position: relative;
+    background: #DEDEDE;
+}
+
+.header-content {
+    width: 85%;
+    margin: 0 auto;
+    padding: 1em;
+    overflow: hidden;
+    clear: both;
+    border-bottom: 1px solid #222;
+    box-shadow: 0 1px 0 #262626;
+    background-color: #191919;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#282828),to(#191919));
+    background-image: -webkit-linear-gradient(top,#282828,#191919);
+    background-image: linear-gradient(top,#282828,#191919);
+}
+
+.brand-container {
+    display: inline-block;
+    float: left;
+}
+
+.branding-text {
+    color: #F3F3F3;
+}
+
+.nav-container {
+    display: inline-block;
+    float: right;
+}
+
+.nav-item {
+    display: inline-block;
+    line-height: 33px;
+    margin-right: .8em;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+.nav-item-link {
+    color: #F3F3F3;
+    display: inline-block;
+    padding: .5em 0 .5em 0;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: .850em;
+}
+
+.nav-item-link:hover {
+    color: #9c9c9c;
+}
+
+
+/***********************************
+* Content Styles
+***********************************/
+
+.intro-screen {
+    width: 85%;
+    margin: 0 auto;
+    min-height: 440px;
+    padding: 1em;
+    background: url("../images/intro-bg.jpg");
+    background-size: cover;
+}
+
+.intro-content {
+    margin: 6em 5em 0 8em;
+}
+
+.intro-title {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 3em;
+    padding-bottom: .3em;
+}
+
+.intro-text {
+    font-family: 'Roboto Slab', serif;
+    color: rgba(255, 255, 255, 0.64);
+    line-height: 30px;
+    width: 70%;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.intro-text span {
+    color: orangered;
+}
+
+.profile-btn {
+    background-color: orangered;
+    color: black;
+    padding: .5em;
+    border-radius: 3px;
+    margin-top: 2em;
+    display: inline-block;
+    font-size: .900em;
+    font-family: 'Roboto Slab', serif;
+}
+
+.profile-btn:hover {
+    background-color: orange;
+}
+
+.content-wrapper {
+    position: relative;
+}
+
+.content {
+    width: 85%;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.main-article {
+    float: left;
+    width: 75%;
+}
+
+.sidebar {
+    float: right;
+    width: 23%;
+    background: #FFFFFF;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: .5em;
+}
+
+.flickr-content li {
+    display: inline-block;
+    margin-right: .2em;
+    width: 30%;
+}
+
+.flickr-content li img {
+    width: 100%;
+}
+
+/***********************************
+* Footer Styles
+***********************************/
+
+.footer {
+    position: relative;
+}
