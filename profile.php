@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Ramesh Rasaiyan's Personal Website | Master's Degree </title>
+    <title>Ramesh Rasaiyan's Personal Website | Profile </title>
+    <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:400,300,700' type='text/css'>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto+Slab:400,300,700,100' type='text/css'>
