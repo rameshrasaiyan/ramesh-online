@@ -394,7 +394,145 @@ img {
     border: 1px solid #FFF;
 }
 
+.contact-item {
+    position: relative;
+    overflow: hidden;
+    clear: both;
+    margin-bottom: 1em;
+}
 
+.contact-item label {
+    display: inline-block;
+    width: 125px;
+    text-align: right;
+    margin-right: 2em;
+}
+
+.contact-item:nth-child(4) label {
+    vertical-align: top;
+}
+
+.contact-item:last-child {
+    text-align: center;
+}
+
+.contact-item input[type="text"] {
+    width: 500px;
+    padding: .5em;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    outline: none;
+    border: 1px solid #D0D0D0;
+    font-size: 1em;
+}
+
+.contact-item textarea {
+    width: 500px;
+    font-size: 1em;
+    background: #FFFFFF;
+    outline: none;
+    border: 1px solid #D0D0D0;
+    border-radius: 5px;
+    padding: .5em;
+}
+
+.btn {
+    padding: .5em 1em;
+    font-size: .900em;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.education-item,
+.experience-item {
+    overflow: hidden;
+    clear: both;
+    position: relative;
+}
+
+.edu-year,
+.exp-year {
+    display: inline-block;
+    width: 100px;
+    float: left;
+    background: #646375;
+    padding: .2em;
+    text-align: center;
+    color: #FFF;
+    position: relative;
+}
+
+.edu-year:after,
+.exp-year:after {
+    content: "\f0da";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #646375;
+    font-size: 2em;
+    padding-right: 0.5em;
+    position: absolute;
+    top: -3px;
+    right: -25px;
+}
+
+.edu-meta,
+.exp-meta {
+    margin-left: 1em;
+    float: left;
+    border-left: 2px solid #C5C5C5;
+    padding-left: 1em;
+    padding-bottom: 2em;
+    position: relative;
+    width: 70%;
+}
+
+
+.edu-meta:before,
+.exp-meta:before {
+    content: "\f111";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #646375;
+    font-size: .800em;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 7px;
+    left: -7px;
+}
+
+.edu-title,
+.exp-title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: .5em;
+}
+
+.edu-university,
+.exp-company {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1em;
+    font-weight: 300;
+    margin-bottom: .5em;
+}
+
+.exp-desc {
+    font-family: 'Roboto Slab', serif;
+    font-size: .900em;
+    font-weight: 300;
+    margin-bottom: .5em;
+    color: #989898;
+}
 /***********************************
 * Layouts
 ***********************************/
@@ -414,6 +552,10 @@ img {
 .column-right {
     float: left;
     width: 31%;
+}
+
+.single-column {
+    width: 90%;
 }
 
 

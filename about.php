@@ -13,16 +13,16 @@
         <header class="header">
             <div class="header-content">
                 <div class="brand-container">
-                    <h1><a class="branding-text" href="index.html">Ramesh Rasaiyan</a></h1>
+                    <h1><a class="branding-text" href="index.php">Ramesh Rasaiyan</a></h1>
                 </div>
                 <div class="nav-container">
                     <nav>
                         <ul class="nav-items">
-                            <li class="nav-item"><a href="index.html" class="nav-item-link">Home</a></li>
-                            <li class="nav-item"><a href="about.html" class="nav-item-link">About</a></li>
-                            <li class="nav-item"><a href="interests.html" class="nav-item-link">Interests</a></li>
-                            <li class="nav-item"><a href="profile.html" class="nav-item-link">Resume</a></li>
-                            <li class="nav-item"><a href="skills.html" class="nav-item-link">Skills</a></li>
+                            <li class="nav-item"><a href="index.php" class="nav-item-link">Home</a></li>
+                            <li class="nav-item"><a href="about.php" class="nav-item-link">About</a></li>
+                            <li class="nav-item"><a href="interests.php" class="nav-item-link">Interests</a></li>
+                            <li class="nav-item"><a href="profile.php" class="nav-item-link">Resume</a></li>
+                            <li class="nav-item"><a href="masters.php" class="nav-item-link">Master's</a></li>
                             <li class="nav-item"><a href="contact.php" class="nav-item-link">Contact</a></li>
                         </ul>
                     </nav>

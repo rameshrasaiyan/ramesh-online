@@ -34,35 +34,11 @@
         <section class="content">
             <article class="main-article">
                 <header>
-                    <h2 class="page-title">Contact Ramesh</h2>
+                    <h2 class="page-title">Master's @ Boston University MET</h2>
                 </header>
                 <div class="row">
                     <div class="single-column">
-                        <form action="contact.php" method="post">
-                            <ul class="contact-items">
-                                <li class="contact-item">
-                                    <label for="name">Full Name: </label>
-                                    <input type="text" name="name" id="name" class="input-name">
-                                </li>
-                                <li class="contact-item">
-                                    <label for="email">Email Address: </label>
-                                    <input type="text" name="email" id="email" class="input-email">
-                                </li>
-                                <li class="contact-item">
-                                    <label for="subject">Subject: </label>
-                                    <input type="text" name="subject" id="subject" class="input-subject">
-                                </li>
-                                <li class="contact-item">
-                                    <label for="message">Message: </label>
-                                    <textarea name="message" id="message" cols="30" rows="10" class="input-message"></textarea>
-                                </li>
-                                <li class="contact-item">
-                                    <input type="reset" class="btn btn-reset">
-                                    <input type="submit" class="btn btn-submit">
-                                </li>
 
-                            </ul>
-                        </form>
                     </div>
                 </div>
             </article>
