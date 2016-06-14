@@ -8,6 +8,10 @@
     border: 0;
 }
 
+html, body {
+    height: 100%;
+}
+
 ul, li {
     list-style-type: none;
 }
@@ -38,6 +42,7 @@ body {
     text-transform: uppercase;
     font-size: 1.3em;
     letter-spacing: 3px;
+    margin-bottom: 1em;
 }
 
 .sidebar-title {
@@ -50,9 +55,19 @@ body {
     border-bottom: 2px solid #F3F3F3;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 /***********************************
 * Header Styles
 ***********************************/
+
+.wrapper-container {
+    min-height: 100%;
+    margin-bottom: -100px;
+}
 
 .header {
     position: relative;
@@ -146,6 +161,71 @@ body {
     letter-spacing: 1px;
 }
 
+.home-content {
+    font-family: 'Roboto Slab', serif;
+    line-height: 30px;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 1px;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.skills-content {
+    position: relative;
+}
+
+.skills-content li:nth-of-type(1) .skills-overlay-bar {
+    width: 95%;
+}
+
+.skills-content li:nth-of-type(2) .skills-overlay-bar {
+    width: 85%;
+}
+
+.skills-content li:nth-of-type(3) .skills-overlay-bar {
+    width: 90%;
+}
+
+.skills-content li:nth-of-type(4) .skills-overlay-bar {
+    width: 60%;
+}
+
+.skills-content li:nth-of-type(5) .skills-overlay-bar {
+    width: 80%;
+}
+
+.skills-overlay-bar {
+    position: absolute;
+    height: 3px;
+    background: orangered;
+    display: block;
+    top: 27px;
+    left: 0;
+    z-index: 100;
+}
+
+.skills-bg {
+    background: #e7e7e7;
+    height: 3px;
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 27px;
+    left: 0;
+    z-index: 50;
+}
+
+.skills-persent {
+    position: absolute;
+    right: 20px;
+}
+
+.skills-content-item {
+    position: relative;
+    margin-bottom: 1.5em;
+}
+
 .intro-text span {
     color: orangered;
 }
@@ -167,12 +247,15 @@ body {
 
 .content-wrapper {
     position: relative;
+    overflow: hidden;
+    margin-bottom: 1em;
 }
 
 .content {
     width: 85%;
     margin: 0 auto;
-    padding: 1em;
+    padding: 2em;
+    overflow: hidden;
 }
 
 .main-article {
@@ -192,13 +275,148 @@ body {
 
 .flickr-content li {
     display: inline-block;
-    margin-right: .2em;
-    width: 30%;
+    margin-right: .5em;
+    margin-bottom: .5em;
+    width: 22%;
 }
 
 .flickr-content li img {
     width: 100%;
 }
+
+.responsive-blocks {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.drupal-contribution li {
+    margin-bottom: .3em;
+}
+
+.drupal-contribution li a {
+    color: #282828;
+    font-size: .900em;
+    font-weight: 100;
+}
+
+.drupal-contribution li a:hover {
+    color: orangered;
+}
+
+.recent-items {
+    overflow: hidden;
+    clear: both;
+}
+
+.recent-item {
+    float: left;
+    width: 31%;
+    margin-right: 1em;
+}
+
+.recent-item-content {
+    width: 100%;
+    position: relative;
+    background: #FFFFFF;
+    border: 2px solid #777777;
+    margin-bottom: 1em;
+}
+
+.recent-item-meta {
+    position: absolute;
+    bottom: 0px;
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    padding: .5em;
+    border-top-right-radius: 5px;
+}
+
+.recent-item-meta .fa {
+    color: white;
+    font-size: .850em;
+    font-weight: 100;
+}
+
+.recent-item-link {
+    color: white;
+    font-size: .850em;
+    font-weight: 100;
+    display: inline-block;
+    padding-right: 1em;
+}
+
+
+.profile-picture-holder {
+    width: 31%;
+    position: absolute;
+    top: 0;
+    right: 27px;
+    text-align: center;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    border: 3px solid #FFFFFF;
+}
+.social-items {
+    margin-top: 1em;
+}
+
+.social-item {
+    display: inline-block;
+    margin-right: .5em;
+}
+
+.social-item:last-child {
+    margin-right: 0;
+}
+
+.social-item-link {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    background: #E2E2E2;
+    border-radius: 50%;
+    border: 1px solid #CCC;
+    font-size: 1.2em;
+    line-height: 32px;
+    color: dimgrey;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+}
+
+.social-item-link:hover {
+    background: orangered;
+    color: #FFFFFF;
+    border: 1px solid #FFF;
+}
+
+
+/***********************************
+* Layouts
+***********************************/
+
+.row {
+    position: relative;
+    overflow: hidden;
+    clear: both;
+}
+
+.column-left {
+    float: left;
+    width: 62%;
+    margin-right: 2em;
+}
+
+.column-right {
+    float: left;
+    width: 31%;
+}
+
+
 
 /***********************************
 * Footer Styles
@@ -206,4 +424,26 @@ body {
 
 .footer {
     position: relative;
+    clear: both;
+    text-align: center;
+    margin-top: 1em;
+    background: #DEDEDE;
+}
+
+.footer-content {
+    width: 85%;
+    margin: 0 auto;
+    padding: 1em;
+    background: #616161;
+    color: #FFFFFF;
+    font-size: .900em;
+    font-weight: 100;
+    letter-spacing: 1px;
+    height: 100px;
+}
+
+.wrapper-container:after {
+    content: "";
+    display: block;
+    height: 100px;
 }
