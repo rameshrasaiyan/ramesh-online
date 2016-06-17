@@ -41,22 +41,50 @@
                     <div class="column-left">
                         <h2 class="page-title">Experience</h2>
                         <ul class="experience-items">
-                            <?php
-                                include 'settings.php';
-                                $pdo = Database::connect();
-                                $sql = 'SELECT * FROM experience ORDER BY id DESC';
-                                foreach ($pdo->query($sql) as $row) {
-                                    echo '<li class="experience-item">';
-                                    echo '<span class="exp-year">'. $row['fyear'] .' - '.  $row['tyear'] .'</span>';
-                                    echo '<div class="exp-meta">';
-                                    echo '<h3 class="exp-title">'. $row['title'] .'</h3>';
-                                    echo '<h4 class="exp-company">'. $row['company'] .'</h4>';
-                                    echo '<p class="exp-desc">'. $row['rdesc'] .'</p>';
-                                    echo '</div></li>';
-                                }
-                            Database::disconnect();
-                            ?>
+                            <li class="experience-item">
+                                <span class="exp-year">2001 - 2002</span>
+                                <div class="exp-meta">
+                                    <h3 class="exp-title">Sr. Digital Designer</h3>
+                                    <h4 class="exp-company">Singapore Infoquest Technologies India P Ltd</h4>
+                                    <p class="exp-desc">Translating a client’s marketing or informational content into a functional website.
+                                        Creating wireframes.
+                                        Creating and editing images and graphics for website use.
+                                        Determining all coding requirements for site creation including: e-commerce capability, forms and specialized scripts.
+                                        Creating templates of approved website layout.
+                                        Coding website using HTML/CSS, and GUI design software.
+                                        Coordinating with programmers.</p>
+                                </div>
+                            </li>
+                            <li class="experience-item">
+                                <span class="exp-year">1997 - 2001</span>
+                                <div class="exp-meta">
+                                    <h3 class="exp-title">Sr. Graphics Designer</h3>
+                                    <h4 class="exp-company">Spine Solutions India P Ltd</h4>
+                                    <p class="exp-desc">Brainstorming and mocking up design ideas
+                                        Presenting ideas to clients
+                                        Meeting with clients and adjusting designs to fit their needs or taste
+                                        Creating layout design for web applications.
+                                        HTML/CSS conversion
+                                        Working closely with developers</p>
+                                </div>
+                            </li>
+<!--                            --><?php
+//                                include 'settings.php';
+//                                $pdo = Database::connect();
+//                                $sql = 'SELECT * FROM experience ORDER BY id DESC';
+//                                foreach ($pdo->query($sql) as $row) {
+//                                    echo '<li class="experience-item">';
+//                                    echo '<span class="exp-year">'. $row['fyear'] .' - '.  $row['tyear'] .'</span>';
+//                                    echo '<div class="exp-meta">';
+//                                    echo '<h3 class="exp-title">'. $row['title'] .'</h3>';
+//                                    echo '<h4 class="exp-company">'. $row['company'] .'</h4>';
+//                                    echo '<p class="exp-desc">'. $row['rdesc'] .'</p>';
+//                                    echo '</div></li>';
+//                                }
+//                            Database::disconnect();
+//                            ?>
                         </ul>
+
 
                         <h2 class="page-title">Education</h2>
                         <ul class="education-items">
@@ -155,7 +183,17 @@
     </div>
 </footer>
 
-<script src="js/jquery-2.2.4.min.js"></script>
-<script src="js/flickr.js"></script>
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/flickr.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-79514339-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 </body>
 </html>
