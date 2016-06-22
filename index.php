@@ -76,7 +76,7 @@
 									<span class="skills-persent">60%</span>
 								</li>
 								<li class="skills-content-item">
-									<span>Drupal Theme Development</span>
+									<span>Drupal</span>
 									<span class="skills-overlay-bar"></span>
 									<span class="skills-bg"></span>
 									<span class="skills-persent">80%</span>
@@ -143,6 +143,7 @@
 
 	<script src="js/jquery-2.2.4.min.js"></script>
 	<script src="js/flickr.js"></script>
+	<!-- Google Analytics -->
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

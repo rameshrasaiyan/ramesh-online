@@ -41,48 +41,21 @@
                     <div class="column-left">
                         <h2 class="page-title">Experience</h2>
                         <ul class="experience-items">
-                            <li class="experience-item">
-                                <span class="exp-year">2001 - 2002</span>
-                                <div class="exp-meta">
-                                    <h3 class="exp-title">Sr. Digital Designer</h3>
-                                    <h4 class="exp-company">Singapore Infoquest Technologies India P Ltd</h4>
-                                    <p class="exp-desc">Translating a client’s marketing or informational content into a functional website.
-                                        Creating wireframes.
-                                        Creating and editing images and graphics for website use.
-                                        Determining all coding requirements for site creation including: e-commerce capability, forms and specialized scripts.
-                                        Creating templates of approved website layout.
-                                        Coding website using HTML/CSS, and GUI design software.
-                                        Coordinating with programmers.</p>
-                                </div>
-                            </li>
-                            <li class="experience-item">
-                                <span class="exp-year">1997 - 2001</span>
-                                <div class="exp-meta">
-                                    <h3 class="exp-title">Sr. Graphics Designer</h3>
-                                    <h4 class="exp-company">Spine Solutions India P Ltd</h4>
-                                    <p class="exp-desc">Brainstorming and mocking up design ideas
-                                        Presenting ideas to clients
-                                        Meeting with clients and adjusting designs to fit their needs or taste
-                                        Creating layout design for web applications.
-                                        HTML/CSS conversion
-                                        Working closely with developers</p>
-                                </div>
-                            </li>
-<!--                            --><?php
-//                                include 'settings.php';
-//                                $pdo = Database::connect();
-//                                $sql = 'SELECT * FROM experience ORDER BY id DESC';
-//                                foreach ($pdo->query($sql) as $row) {
-//                                    echo '<li class="experience-item">';
-//                                    echo '<span class="exp-year">'. $row['fyear'] .' - '.  $row['tyear'] .'</span>';
-//                                    echo '<div class="exp-meta">';
-//                                    echo '<h3 class="exp-title">'. $row['title'] .'</h3>';
-//                                    echo '<h4 class="exp-company">'. $row['company'] .'</h4>';
-//                                    echo '<p class="exp-desc">'. $row['rdesc'] .'</p>';
-//                                    echo '</div></li>';
-//                                }
-//                            Database::disconnect();
-//                            ?>
+                            <?php
+                                include 'settings.php';
+                                $pdo = Database::connect();
+                                $sql = 'SELECT * FROM experience ORDER BY id DESC';
+                                foreach ($pdo->query($sql) as $row) {
+                                    echo '<li class="experience-item">';
+                                    echo '<span class="exp-year">'. $row['fyear'] .' - '.  $row['tyear'] .'</span>';
+                                    echo '<div class="exp-meta">';
+                                    echo '<h3 class="exp-title">'. $row['title'] .'</h3>';
+                                    echo '<h4 class="exp-company">'. $row['company'] .'</h4>';
+                                    echo '<p class="exp-desc">'. $row['rdesc'] .'</p>';
+                                    echo '</div></li>';
+                                }
+                            Database::disconnect();
+                            ?>
                         </ul>
 
 
@@ -139,14 +112,14 @@
                                 <span class="skills-persent">60%</span>
                             </li>
                             <li class="skills-content-item">
-                                <span>Drupal Theme Development</span>
+                                <span>Drupal</span>
                                 <span class="skills-overlay-bar"></span>
                                 <span class="skills-bg"></span>
                                 <span class="skills-persent">80%</span>
                             </li>
                         </ul>
                         <h2 class="page-title">Objective</h2>
-                        <p class="exp-desc">
+                        <p class="obj-desc">
                             I am a UI/UX professional specializing in enhancing customer satisfaction and loyalty by improving the usability, ease of use interaction between the user and the product, and producing aesthetic responsive websites and graphic web design mockups. I have more than 16 years of diversified experience on HTML5/CSS3, User Experience(UX) Design, Visual Design, Interaction Design and Theme Development for Drupal and Wordpress.
                         </p>
                     </div>
@@ -185,6 +158,7 @@
 
     <script src="js/jquery-2.2.4.min.js"></script>
     <script src="js/flickr.js"></script>
+    <!-- Google Analytics -->
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
