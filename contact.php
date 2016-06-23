@@ -67,12 +67,12 @@ if(isset($_POST['submit'])){
                                         <span class="error" id="emailMsg"></span>
                                     </li>
                                     <li class="contact-item">
-                                        <label for="subject">Subject: </label>
+                                        <label for="txtSubject">Subject: </label>
                                         <input type="text" name="txtSubject" id="txtSubject" class="input-subject" onfocus="removeError('txtSubject', 'input-subject', 'subMsg' );">
                                         <span class="error" id="subMsg"></span>
                                     </li>
                                     <li class="contact-item">
-                                        <label for="message">Message: </label>
+                                        <label for="txtMessage">Message: </label>
                                         <textarea name="txtMessage" id="txtMessage" cols="30" rows="10" class="input-message" onfocus="removeError('txtMessage', 'input-message', 'msgMsg' );"></textarea>
                                         <span class="error" id="msgMsg"></span>
                                     </li>
