@@ -73,27 +73,27 @@ if ( !empty($_POST)) {
                                     <ul class="form-items">
                                         <li class="form-item">
                                             <label for="txtTitle">Title: </label>
-                                            <input type="text" name="txtTitle" id="txtTitle" class="input-title">
+                                            <input type="text" name="txtTitle" id="txtTitle" class="input-title" onfocus="removeError('txtTitle', 'input-title', 'titleMsg' );">
                                             <span class="error" id="titleMsg"></span>
                                         </li>
                                         <li class="form-item">
                                             <label for="txtCompany">Company Name: </label>
-                                            <input type="text" name="txtCompany" id="txtCompany" class="input-company">
+                                            <input type="text" name="txtCompany" id="txtCompany" class="input-company" onfocus="removeError('txtCompany', 'input-company', 'companyMsg' );">
                                             <span class="error" id="companyMsg"></span>
                                         </li>
                                         <li class="form-item">
                                             <label for="txtFrom">From Year: </label>
-                                            <input type="text" name="txtFrom" id="txtFrom" class="input-from">
+                                            <input type="text" name="txtFrom" id="txtFrom" class="input-from" onfocus="removeError('txtFrom', 'input-from', 'fyearMsg' );">
                                             <span class="error" id="fyearMsg"></span>
                                         </li>
                                         <li class="form-item">
                                             <label for="txtTo">To Year: </label>
-                                            <input type="text" name="txtTo" id="txtTo" class="input-to">
+                                            <input type="text" name="txtTo" id="txtTo" class="input-to" onfocus="removeError('txtTo', 'input-to', 'tyearMsg' );">
                                             <span class="error" id="tyearMsg"></span>
                                         </li>
                                         <li class="form-item">
                                             <label for="txtareaDesc">Description: </label>
-                                            <textarea name="txtareaDesc" id="txtareaDesc" cols="30" rows="10" class="input-desc"></textarea>
+                                            <textarea name="txtareaDesc" id="txtareaDesc" cols="30" rows="10" class="input-desc" onfocus="removeError('txtareaDesc', 'input-desc', 'descMsg' );"></textarea>
                                             <span class="error" id="descMsg"></span>
                                         </li>
                                         <li class="form-item">

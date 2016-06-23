@@ -1,3 +1,18 @@
+<?php
+if(isset($_POST['submit'])){
+    $to = "rasaiyan.ramesh@gmail.com";
+    $from = $_POST['email'];
+    $full_name = $_POST['fullname'];
+    $subject = $_POST['txtSubject'];
+    $message = $full_name . " wrote the following:" . "\n\n" . $_POST['txtMessage'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    header('Location: thankyou.php');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,20 +58,23 @@
                                 <ul class="contact-items">
                                     <li class="contact-item">
                                         <label for="fullname">Full Name: </label>
-                                        <input type="text" name="fullname" id="fullname" class="input-name">
+                                        <input type="text" name="fullname" id="fullname" class="input-name" onfocus="removeError('fullname', 'input-name', 'nameMsg' );">
                                         <span class="error" id="nameMsg"></span>
                                     </li>
                                     <li class="contact-item">
                                         <label for="email">Email Address: </label>
-                                        <input type="text" name="email" id="email" class="input-email">
+                                        <input type="text" name="email" id="email" class="input-email" onfocus="removeError('email', 'input-email', 'emailMsg' );">
+                                        <span class="error" id="emailMsg"></span>
                                     </li>
                                     <li class="contact-item">
                                         <label for="subject">Subject: </label>
-                                        <input type="text" name="subject" id="subject" class="input-subject">
+                                        <input type="text" name="txtSubject" id="txtSubject" class="input-subject" onfocus="removeError('txtSubject', 'input-subject', 'subMsg' );">
+                                        <span class="error" id="subMsg"></span>
                                     </li>
                                     <li class="contact-item">
                                         <label for="message">Message: </label>
-                                        <textarea name="message" id="message" cols="30" rows="10" class="input-message"></textarea>
+                                        <textarea name="txtMessage" id="txtMessage" cols="30" rows="10" class="input-message" onfocus="removeError('txtMessage', 'input-message', 'msgMsg' );"></textarea>
+                                        <span class="error" id="msgMsg"></span>
                                     </li>
                                     <li class="contact-item">
                                         <input type="reset" name="reset" value="Reset" class="btn btn-reset">

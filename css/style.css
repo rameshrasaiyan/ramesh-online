@@ -427,6 +427,10 @@ img {
     top: 200px;
 }
 
+.contact-item:nth-child(4) > span.error {
+    top: 200px;
+}
+
 .contact-item:last-child,
 .form-item:last-child {
     text-align: center;
@@ -628,6 +632,109 @@ img {
     margin-bottom: 2em;
     border-radius: 5px;
 }
+
+.course-items {
+    margin-top: 1em;
+}
+
+.course-item {
+    padding: .5em;
+    background: #d4d4d4;
+    font-size: .900em;
+    margin-bottom: 2px;
+    cursor: hand;
+    cursor: pointer;
+    position: relative;
+}
+
+.course-item:hover {
+    background: #9c9c9c;
+}
+
+.course-item a {
+    color: #616161;
+    display: block;
+}
+
+.course-item a:hover {
+    color: beige;
+}
+
+.in-progress:before {
+    content: '';
+    display: block;
+    width: 3px;
+    background: orangered;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 31px;
+}
+
+.not-started:before {
+    content: '';
+    display: block;
+    width: 3px;
+    background: grey;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 31px;
+}
+
+.completed:before {
+    content: '';
+    display: block;
+    width: 3px;
+    background: #00bcd4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 31px;
+}
+
+.legend-progress:before {
+    content: '';
+    display: block;
+    width: 10px;
+    background: orangered;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 10px;
+}
+
+.legend {
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+    font-size: .800em;
+    padding-left: 15px;
+    top: 10px;
+}
+
+.legend-completed:before {
+    content: '';
+    display: block;
+    width: 10px;
+    background: #00bcd4;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 10px;
+}
+
+.legend-not-started:before {
+    content: '';
+    display: block;
+    width: 10px;
+    background: grey;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 10px;
+}
+
 
 /***********************************
 * Layouts
