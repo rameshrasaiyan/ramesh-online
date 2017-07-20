@@ -49,9 +49,9 @@
                                 <li class="course-item completed"><a href="http://www.bu.edu/csmet/cs625/" target="_blank">MET CS 625 Business Data Communication and Networks</a></li>
                                 <li class="course-item completed"><a href="http://www.bu.edu/csmet/cs669/" target="_blank">MET CS 669 Database Design and Implementation for Business</a></li>
                                 <li class="course-item completed"><a href="http://www.bu.edu/csmet/cs682/" target="_blank">MET CS 682 Information Systems Analysis and Design</a></li>
-                                <li class="course-item in-progress"><a href="http://www.bu.edu/csmet/cs782/" target="_blank">MET CS 782 IT Strategy and Management</a></li>
-                                <li class="course-item not-started"><a href="http://www.bu.edu/csmet/cs521/" target="_blank">MET CS 521 Information Structures with Python</a></li>
-                                <li class="course-item not-started"><a href="http://www.bu.edu/csmet/cs701/" target="_blank">MET CS 701 Rich Internet Application Development</a></li>
+                                <li class="course-item completed"><a href="http://www.bu.edu/csmet/cs782/" target="_blank">MET CS 782 IT Strategy and Management</a></li>
+                                <li class="course-item completed"><a href="http://www.bu.edu/csmet/cs521/" target="_blank">MET CS 521 Information Structures with Python</a></li>
+                                <li class="course-item in-progress"><a href="http://www.bu.edu/csmet/cs701/" target="_blank">MET CS 701 Rich Internet Application Development</a></li>
                                 <li class="course-item not-started"><a href="http://www.bu.edu/csmet/cs602/" target="_blank">MET CS 602 Server-Side Web Development</a></li>
                                 <li class="course-item not-started"><a href="http://www.bu.edu/csmet/cs546/" target="_blank">MET CS 546 Quantitative Methods for Information Systems</a></li>
                             </ul>
